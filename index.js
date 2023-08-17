@@ -4,7 +4,7 @@ let axios = require("axios");
 let app = express();
 let port = process.env.PORT || 80;
 
-app.use(express.static("index.html"));
+app.use(express.static("public_html"));
 app.listen(port, function(){
     console.log("HTML 서버 시작됨");
 });
